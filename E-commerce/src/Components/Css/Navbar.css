@@ -1,0 +1,22 @@
+:root{
+    --bodybackground : #111111;
+    --main-color: #f6b608;
+  }
+header{
+    padding: 1rem 8rem 0 8rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.logo img{
+    height: 4rem;
+}
+.nav__items{
+    list-style: none;
+    /* text-align: center; */
+}
+.nav__items {
+    text-decoration: none;
+    padding-top: 1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 1.3rem;
+}

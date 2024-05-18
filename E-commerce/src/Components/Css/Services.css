@@ -1,0 +1,47 @@
+.card_s{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+    padding: 2rem 0;
+
+
+    .icon{
+        background-color: white;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        
+        position: relative;
+
+
+        & .log{
+            position: absolute;
+            top: 0.4rem;
+            right: 0.9rem;
+            font-size: 2rem;
+        }
+
+
+
+        
+    }
+    
+}
+.card_s:first-child{
+    background-color: #fdefe6;
+    
+}
+.card_s:nth-child(2){
+    background-color: #ceebe9;
+    
+}
+.card_s:nth-child(3){
+    background-color: #e2f2b2;
+    
+}
+.card_s:last-child{
+    background-color: #d6e5fb;
+
+}
+

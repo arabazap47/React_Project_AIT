@@ -1,0 +1,33 @@
+.hero{
+    background-color: #f6f9fc;
+    padding: 5rem 0 4rem 0;
+}
+.hero_content{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7rem;
+    row-gap: 1.5rem;
+
+    .content_title{
+        font-size: 4rem;
+        font-weight: 600;
+    }
+    .content_description{
+        font-size: 1.2rem;
+        color: gray;
+        letter-spacing: 1.4px;
+    }
+    a{
+        text-decoration: none;
+        color: black;
+        background-color: #efefef;
+        width: fit-content;
+        font-size: 1.2rem;
+    }
+}
+
+.services{
+    padding: 2.8rem 0;
+
+}
