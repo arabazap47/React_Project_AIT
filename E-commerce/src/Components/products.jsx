@@ -33,6 +33,11 @@ import wireless04 from "../assets/Images/wireless-04.png";
 import sofaSlide from "../assets/Images/hero-img.png";
 import watchSlide from "../assets/Images/watch-07.png";
 
+import { MdLocalShipping } from "react-icons/md";
+import { IoCard } from "react-icons/io5";
+import { FaShieldAlt } from "react-icons/fa";
+import { RiRefund2Fill } from "react-icons/ri";
+
 export const SliderData = [
   {
       id: 1,
@@ -62,25 +67,25 @@ export const SliderData = [
 
 export const serviceData = [
   {
-    icon: <ion-icon name="car"></ion-icon>,
+    icon: <MdLocalShipping />,
     title: "Free Shipping",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#fdefe6",
   },
   {
-    icon: <ion-icon name="card"></ion-icon>,
+    icon: <IoCard />,
     title: "Safe Payment",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#ceebe9",
   },
   {
-    icon: <ion-icon name="shield-half-outline"></ion-icon>,
+    icon: <FaShieldAlt />,
     title: "Secure Payment",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#e2f2b2",
   },
   {
-    icon: <ion-icon name="headset"></ion-icon>,
+    icon: <RiRefund2Fill/>,
     title: " Back Guarantee",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#d6e5fb",

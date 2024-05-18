@@ -1,3 +1,7 @@
+.home_container{
+    z-index: -999;
+
+}
 .hero{
     background-color: #f6f9fc;
     padding: 5rem 0 4rem 0;
@@ -28,6 +32,6 @@
 }
 
 .services{
-    padding: 2.8rem 0;
+    padding: 5rem 2rem;
 
 }

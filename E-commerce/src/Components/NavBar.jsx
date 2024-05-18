@@ -6,7 +6,7 @@ import './Css/Navbar.css'
 
 const NavBar = () => {
   return (
-    <header className='sticky-top'>
+    <header className='z-3 sticky-top'>
       <nav className="nav_bar container-fluid">
         <div className="row row-cols-lg-2">
           <Link to="hero" className="logo">
