@@ -1,5 +1,4 @@
 import React from 'react'
-import { serviceData } from './products'
 import './Css/Services.css'
 
 const Services = ({title,subtitle,bg,icon}) => {
