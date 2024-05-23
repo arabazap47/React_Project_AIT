@@ -28,7 +28,7 @@ const NavBar = () => {
 
               <li className="nav__items">
                 <Link
-                 to="shop"
+                 to="shoppage"
                  class="nav-link active"
                  aria-current="page"
                  href="#"

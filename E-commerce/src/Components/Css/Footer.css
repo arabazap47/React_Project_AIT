@@ -1,0 +1,32 @@
+.Layout {
+  background-color: #0f3460; /* Light grey background */
+  padding: 20px 0;
+  padding: 4rem 3rem 3rem 3rem;
+}
+
+.block-center h3 {
+  color: white;
+}
+.block-center .list {
+  line-height: 2.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.list a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #8598af;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: rgb(198, 198, 198);
+  }
+}
+.block-center p {
+  color: #8598af;
+  font-size: 1.2rem;
+}
+.block-center:first-child {
+  line-height: 2rem;
+  padding: 1.5rem;
+}
