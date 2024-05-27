@@ -11,14 +11,17 @@ header{
 .logo img{
     height: 4rem;
 }
-.nav__items{
+li{
     list-style: none;
-    /* text-align: center; */
+    padding-top: 1.5rem;
 }
 .nav__items {
     text-decoration: none;
-    padding-top: 1rem;
     letter-spacing: 1px;
     font-weight: 600;
-    font-size: 1.3rem;
+    color: black;
+    font-size: 1.1rem;
+}
+.nav__item{
+    font-size: 1.4rem;
 }

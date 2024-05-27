@@ -55,7 +55,7 @@ const HomePage = () => {
         <div className="container-fluid">
           <div className="row">
           {
-            discoutProducts.map((product, index) =>(<ProductCard key={product.id} productName ={product.productName} price={product.price} discount={product.discount} productImage={product.imgUrl} rating={product.avgRating} />))
+            discoutProducts.map((product, index) =>(<ProductCard key={product.id} productName ={product.productName} price={product.price} discount={product.discount} productImage={product.imgUrl} rating={product.avgRating} id={product.id} />))
           }
           </div>
         </div>
@@ -70,7 +70,7 @@ const HomePage = () => {
               {
                 products.map((product) =>{
                   return (product.category === 'mobile' || product.category === 'wireless') && 
-                  <ProductCard key={product.id} productName ={product.productName} price={product.price} productImage={product.imgUrl} rating={product.avgRating} discount={product.discount ?? null}/>
+                  <ProductCard key={product.id} productName ={product.productName} price={product.price} productImage={product.imgUrl} rating={product.avgRating} id={product.id} discount={product.discount ?? null}/>
                 })
               }
 
@@ -85,7 +85,7 @@ const HomePage = () => {
               {
                 products.map((product) =>{
                   return (product.category === 'sofa' || product.category === 'chair') && 
-                  <ProductCard key={product.id} productName ={product.productName} price={product.price} productImage={product.imgUrl} rating={product.avgRating} discount={product.discount ?? null}/>
+                  <ProductCard key={product.id} productName ={product.productName} price={product.price} productImage={product.imgUrl} rating={product.avgRating} id={product.id} discount={product.discount ?? null}/>
                 })
               }
 
@@ -93,8 +93,6 @@ const HomePage = () => {
           </div>
       </section>
 
-
-      
     </div>
   );
 };

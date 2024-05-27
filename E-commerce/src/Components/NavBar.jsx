@@ -1,10 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { MdShoppingCart } from "react-icons/md";
-import { FaUser } from "react-icons/fa";
+import { FaUserAlt } from "react-icons/fa";
 import './Css/Navbar.css'
+import { Avatar, Badge, Space } from 'antd';
+import { useSelector } from "react-redux";
 
 const NavBar = () => {
+
+  const items = useSelector((state) => state.cart.items)
   return (
     <header className='z-3 sticky-top'>
       <nav className="nav_bar container-fluid">
@@ -15,54 +19,46 @@ const NavBar = () => {
 
           <div className="nav__menu" id="nav-menu">
             <ul className="nav__list d-flex gap-5 justify-content-end">
-              <li className="nav__items">
+              <li>
                 <Link
+                className="nav__items"
                   to="/"
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
                 >
                   Home
                 </Link>
               </li>
 
-              <li className="nav__items">
+              <li>
                 <Link
+                className="nav__items"
                  to="shoppage"
-                 class="nav-link active"
-                 aria-current="page"
-                 href="#"
                 >
                   Shop
                 </Link>
               </li>
 
-              <li className="nav__items">
+              <li>
                 <Link
-                  to="cart"
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
+                className="nav__items"
+                  to="cartpage"
                 >
                   Cart
                 </Link>
               </li>
-              <li className="nav__items">
-                <Link
-                  
-                >
-                  <FaUser />
+              <li>
+                <Link className="nav__items">
+                  <FaUserAlt />
                 </Link>
               </li>
 
-              <li className="nav__items">
+              <li>
                 <Link
-                  to="cart"
-                  class="nav-link active"
-                  aria-current="page"
-                  href="#"
+                  
+                  to="cartpage"
                 >
-                  <MdShoppingCart />
+                  <Badge className="nav__item" count={items.length} overflowCount={10}>
+                  < MdShoppingCart />
+                  </Badge>
                 </Link>
               </li>
             </ul>

@@ -86,6 +86,7 @@ const ShopPage = () => {
                 price={product.price}
                 productImage={product.imgUrl}
                 rating={product.avgRating}
+                id= {product.id}
                 discount={product.discount ?? null}
               />
             ))}

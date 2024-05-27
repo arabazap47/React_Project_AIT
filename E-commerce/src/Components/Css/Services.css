@@ -6,7 +6,7 @@
     padding: 2rem 0;
 
 
-    .icon{
+    .icons{
         background-color: white;
         height: 4rem;
         width: 4rem;
@@ -17,8 +17,8 @@
 
         & .log{
             position: absolute;
-            top: 0.4rem;
-            right: 0.9rem;
+            top: 0.3rem;
+            right: 1rem;
             font-size: 2rem;
         }
 

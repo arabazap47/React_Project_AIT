@@ -6,7 +6,7 @@ const Services = ({title,subtitle,bg,icon}) => {
     <div className='px-2'>
         
                 <div className="card_s" style={{background: bg}}>
-                    <div className="icon">
+                    <div className="icons">
                         <p className='log'>{icon}</p>
                     </div>
                     <h2>{title}</h2>

@@ -4,6 +4,7 @@ import HomePage from './Components/HomePage'
 import NavBar from './Components/NavBar'
 import Routing from './Components/Routing/Routing'
 import Footer from './Components/Footer'
+import { ToastContainer } from 'react-toastify';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <NavBar />
       <Routing />
       <Footer />
+      <ToastContainer />
     </>
   )
 }

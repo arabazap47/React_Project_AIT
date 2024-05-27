@@ -1,0 +1,128 @@
+.product_name {
+    position: relative;
+    width: 98.9vw;
+    height: 12rem;
+    background: black;
+    overflow: hidden;
+    text-align: center;
+  
+    & img {
+      object-fit: cover;
+      opacity: 0.5;
+    }
+  }
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .product_info{
+    padding: 3rem 0 1rem 0;
+  }
+  .info{
+    padding-bottom: 5rem;
+  }
+  .left-img img{
+    max-width: 100%;
+    height: 25rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1); 
+    }
+  }
+  .right-content{
+    max-width: 38rem;
+  }
+  .title{
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .rate{
+    font-size: 1.1rem;
+    
+    & .rate_num{
+        padding-left: 4rem;
+    }
+  }
+  .price{
+    font-size: 1.7rem;
+    font-weight: 600;
+
+    .category{
+        font-size: 1.2rem;
+        color: gray;
+        padding-left: 4rem;
+        font-weight: 100;
+    }
+  }
+  
+ .quantity{
+    width: 6rem;
+    border: 1px solid gray;
+    border-radius: 0.5rem;
+    outline: none;
+
+    &[type=number]{
+        padding : 0.3rem 0.5rem 0.3rem 1rem;
+    }
+ } 
+ .add-cart{
+    width: 8rem;
+    border: none;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    background-color: #0f3460;
+    color: white;
+    transition: all 0.2s ease-out;
+
+    &:hover{
+      background-color: #10417d;
+    }
+ }
+ .description-btn,
+ .reviews-btn{
+  padding: 0.5rem 0 ;
+  width: 7rem;
+  background:none;
+  border: none;
+  font-size: 1.1rem;
+ }
+.description-btn.active,
+.reviews-btn.active{
+  font-weight: bold;
+
+}
+
+.description-btn.active,
+.reviews-btn.active{
+  border-bottom: 2px solid #000; 
+}
+
+
+.descrip-section{
+  column-gap: 0.5rem;
+} 
+.reviews_customer{
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  background-color: rgb(240, 240, 240);
+  width: 35vw;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  line-height: 0.1rem;
+}
+
+.similar_products {
+  padding: 4rem 10rem;
+
+  .youmightalsolike{
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+}
