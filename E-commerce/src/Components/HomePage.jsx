@@ -23,14 +23,16 @@ const HomePage = () => {
         >
           {SliderData.map((item, index) => (
             <SwiperSlide key={index}>
-              <div className="container d-flex justify-content-between align-items-center">
-                <div className="hero_content ">
+              <div className="container">
+                <div className="row align-items-center">
+                <div className="hero_content col-lg-6 col-sm-6">
                   <h2 className="content_title">{item.title}</h2>
                   <p className="content_description">{item.desc}</p>
                   <a href="">Visit Collections</a>
                 </div>
-                <div className="hero_img">
+                <div className="hero_img col-lg-6 col-sm-6 ps-5">
                   <img src={item.cover} className="img-fluid" alt="" />
+                </div>
                 </div>
               </div>
             </SwiperSlide>
@@ -39,7 +41,7 @@ const HomePage = () => {
       </section>
       <section className="services">
       <div className="container-fluid">
-            <div className="row row-cols-4">
+            <div className="row row-cols-4 service">
         {
           serviceData.map((service, index) =>(<Services title={service.title} subtitle={service.subtitle} bg={service.bg} icon={service.icon}/>))
         } 

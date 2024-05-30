@@ -9,6 +9,7 @@ import { add } from './Redux/Cart/CartSlice';
 import {Bounce, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import ProductCard from "./ProductCard";
+import Rating from '@mui/material/Rating';
 import { useDispatch } from "react-redux";
 
 const ProductInfo = () => {
@@ -66,14 +67,14 @@ const ProductInfo = () => {
       </section>
       {product && Object.keys(product) ? (
         <section className="product_info">
-          <div className="container d-flex justify-content-around info">
-            <div className="left-img">
+          <div className="container d-flex justify-content-between info">
+            <div className="left-img d-flex">
               <img src={product.imgUrl} alt="" />
             </div>
             <div className="right-content d-flex flex-column">
               <h2 className="title">{product.productName}</h2>
               <p className="rate mt-4">
-                <Rate allowHalf disabled defaultValue={product.avgRating} />
+              <Rating name="half-rating-read" defaultValue={product.avgRating} precision={0.5} readOnly />
                 <span className="rate_num">{product.avgRating}</span>
               </p>
               <p className="price mt-2">
@@ -115,7 +116,7 @@ const ProductInfo = () => {
               <div className="reviews mt-3">
                 {product.reviews.map((review, index) => (
                   <div className="reviews_customer" key={index}>
-                    <p><Rate allowHalf disabled defaultValue={review.rating} /></p>
+                    <p><Rating name="half-rating-read" defaultValue={product.avgRating} precision={0.5} readOnly /></p>
                     <p >{review.text}</p>
                   </div>
                 ))}

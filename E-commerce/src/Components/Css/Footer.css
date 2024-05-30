@@ -7,11 +7,20 @@
 .block-center h3 {
   color: white;
 }
+.lo_go {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.5rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
 .block-center .list {
   line-height: 2.5rem;
   display: flex;
   flex-direction: column;
 }
+
 .list a {
   text-decoration: none;
   font-size: 1.3rem;
@@ -29,4 +38,32 @@
 .block-center:first-child {
   line-height: 2rem;
   padding: 1.5rem;
+}
+
+@media (width<=840px) {
+  .Layout {
+    padding: 2rem 0;
+  }
+  .block-center:first-child {
+    padding: 0;
+    font-size: 1rem;
+  }
+  .list {
+    line-height: 1.5rem;
+
+    a {
+      font-size: 1.1rem;
+    }
+    .block-center p {
+      font-size: 1rem;
+    }
+  }
+}
+@media (width<=475px) {
+  .Layout {
+    padding: 0;
+  }
+  .block-center:first-child {
+    padding: 2rem 0;
+  }
 }

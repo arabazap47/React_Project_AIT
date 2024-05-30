@@ -1,5 +1,6 @@
 import React from "react";
 import "./Css/Footer.css";
+import { FaShoppingBag } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-12 col-sm-6 col-md-3 footer-column">
               <div className="block-center">
-                <h3>MART</h3>
+                <h3 className="lo_go"> < FaShoppingBag className="bag"/>MART</h3>
                 <p>
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa
                   velit laboriosam labore obcaecati fugit distinctio officia eos

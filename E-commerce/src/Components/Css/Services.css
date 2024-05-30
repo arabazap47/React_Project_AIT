@@ -1,47 +1,90 @@
-.card_s{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 1rem;
-    padding: 2rem 0;
+.card_s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  padding: 1rem 0;
 
+  .icons {
+    background-color: white;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
 
-    .icons{
-        background-color: white;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        
-        position: relative;
+    position: relative;
 
-
-        & .log{
-            position: absolute;
-            top: 0.3rem;
-            right: 1rem;
-            font-size: 2rem;
-        }
-
-
-
-        
+    & .log {
+      position: absolute;
+      top: 0.3rem;
+      right: 1rem;
+      font-size: 2rem;
     }
-    
+  }
 }
-.card_s:first-child{
-    background-color: #fdefe6;
-    
+.card_s:first-child {
+  background-color: #fdefe6;
 }
-.card_s:nth-child(2){
-    background-color: #ceebe9;
-    
+.card_s:nth-child(2) {
+  background-color: #ceebe9;
 }
-.card_s:nth-child(3){
-    background-color: #e2f2b2;
-    
+.card_s:nth-child(3) {
+  background-color: #e2f2b2;
 }
-.card_s:last-child{
-    background-color: #d6e5fb;
-
+.card_s:last-child {
+  background-color: #d6e5fb;
 }
 
+@media (width<=840px) {
+  .card_s {
+    padding: 0.6rem 0;
+
+    .icons {
+      height: 3rem;
+      width: 3rem;
+
+      & .log {
+        font-size: 1.5rem;
+        right: 0.7rem;
+      }
+    }
+
+    .s_sub {
+      font-size: 0.8rem;
+    }
+    .s_title {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (width<=475px) {
+    .card_s {
+      padding: 0.6rem 0;
+  
+      .icons {
+        height: 3rem;
+        width: 3rem;
+  
+        & .log {
+          font-size: 1.5rem;
+          right: 0.7rem;
+        }
+      }
+  
+      .s_sub {
+        font-size: 1rem;
+      }
+      .s_title {
+        font-size: 1.3rem;
+      }
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.4rem;
+
+        .card_s{
+            width: 96.3vw;
+        }
+    }
+  }

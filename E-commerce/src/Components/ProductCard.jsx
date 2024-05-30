@@ -6,6 +6,7 @@ import { Rate } from 'antd';
 import './Css/Productcard.css'
 import { add } from './Redux/Cart/CartSlice';
 import {Bounce, toast} from 'react-toastify'
+import Rating from '@mui/material/Rating';
 import 'react-toastify/dist/ReactToastify.css';
 
 const ProductCard = ({productName,price,productImage,discount,key,rating,id}) => {
@@ -43,7 +44,7 @@ const ProductCard = ({productName,price,productImage,discount,key,rating,id}) =>
                 <img src={productImage} alt="Product Image" className="product-img img-fluid mx-auto d-block"/>
                 <div className="product-details flex-grow-1 d-flex flex-column justify-content-between">
                   <h2 className="product-title">{productName}</h2>
-                  <p className="rating"><Rate allowHalf disabled defaultValue={rating}/></p>
+                  <Rating name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
                   <p className="product-price">${price}</p>
                   
                 </div>

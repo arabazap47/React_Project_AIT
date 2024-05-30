@@ -59,3 +59,30 @@
   font-size: 1.1rem;
   border-radius: 0.5rem;
 }
+
+@media(width<=840px) {
+  .products_section,
+  .product_s{
+    padding: 1rem 0;
+  }
+  
+  .category_select{
+    margin: 0;
+  }
+  .search-bar input[type="text"]{
+    width: 100%;
+  }
+  
+}
+@media(width<=475px) {
+  .products_section{
+    padding: 1rem 0;
+  }
+  .filter_section{
+    flex-direction: column-reverse;
+  }
+  .search-bar input[type="text"]{
+    width: 100%;
+  }
+  
+}

@@ -46,7 +46,7 @@ const ShopPage = () => {
         </div>
       </section>
       <section className="products_section">
-        <div className="container-fluid d-flex justify-content-between">
+        <div className="container-fluid d-flex justify-content-between filter_section">
         
         {/* CAtegory Dropdown */}
         <select
@@ -77,7 +77,7 @@ const ShopPage = () => {
         </div>
 
         <div className="container-fluid">
-          <div className="row">
+          <div className="row product_s">
             {filteredProducts.map((product) => (
               // return (product.category === 'sofa' || product.category === 'chair') &&
               <ProductCard

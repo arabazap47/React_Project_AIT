@@ -3,7 +3,7 @@
 }
 .hero {
   background-color: #f6f9fc;
-  padding: 5rem 0 4rem 0;
+  padding: 4rem 0 2rem 0;
 }
 .hero_content {
   width: 45%;
@@ -31,7 +31,7 @@
 }
 
 .services {
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
 }
 
 .product-card a {
@@ -47,11 +47,66 @@
 .discount_product,
 .new_arrivals,
 .best_sales {
-  padding: 4rem 10rem;
+  padding: 4rem 14rem;
 }
 
 .heading {
   font-size: 2.8rem;
   font-weight: 600;
   padding: 0 0 3rem 0;
+}
+
+
+
+@media (width<=840px){
+  .hero{
+    padding: 2rem 0 0 0 ;
+    overflow: hidden;
+  }
+  
+  .hero_content {
+
+  .content_title{
+    font-size: 2.5rem;
+  }
+}
+
+.discount_product,
+.new_arrivals,
+.best_sales {
+  padding: 2rem 0;
+}
+}
+
+
+
+
+
+
+
+@media (width<=475px){
+  .hero{
+    padding:3rem 0 0 0  ;
+    height: fit-content;
+  }
+  
+  .hero_content {
+
+  .content_title{
+    font-size: 2rem;
+  }
+}
+.services{
+  padding: 3rem 0;
+  width: 100%;
+}
+.discount_product,
+.new_arrivals,
+.best_sales {
+  padding: 2rem 0;
+}
+.heading{
+  font-size: 2rem;
+}
+
 }

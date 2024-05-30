@@ -1,12 +1,13 @@
 .product_name {
     position: relative;
-    width: 98.9vw;
+    width: vw;
     height: 12rem;
     background: black;
     overflow: hidden;
     text-align: center;
-  
+    
     & img {
+      overflow: hidden;
       object-fit: cover;
       opacity: 0.5;
     }
@@ -112,7 +113,7 @@
   border: 1px solid black;
   border-radius: 0.5rem;
   background-color: rgb(240, 240, 240);
-  width: 35vw;
+  width: 30rem;
   padding: 0.5rem;
   margin-bottom: 1rem;
   line-height: 0.1rem;
@@ -124,5 +125,51 @@
   .youmightalsolike{
     font-size: 1.5rem;
     font-weight: 600;
+  }
+}
+
+@media(width<=840px){
+  .similar_products{
+    padding: 2rem 0;
+  }
+  .text{
+    font-size: 1.5rem;
+  }
+  .product_info{
+    padding: 1rem 0;
+  }
+  .info{
+    flex-direction: column;
+    & .left-img{
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+  .reviews_customer{
+    width: 100%;
+  }
+}
+
+@media(width<=475px){
+  .similar_products{
+    padding: 2rem 0;
+  }
+  .text{
+    font-size: 1.3rem;
+  }
+  .product_info{
+    padding: 1rem 0;
+  }
+  .info{
+    flex-direction: column;
+    & .left-img{
+      flex-direction: column;
+      align-items: center;
+
+    }
+  }
+  .reviews_customer{
+    width: fit-content;
   }
 }

@@ -3,25 +3,74 @@
     --main-color: #f6b608;
   }
 header{
+    position: relative;
     background-color: white;
     z-index: 999;
     padding: 1rem 8rem 0 8rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
-.logo img{
-    height: 4rem;
+.logo{
+    display: flex;
+    flex-direction: row;
+    color: black;
+    font-weight: 600;
+    font-size: 2rem;
+    padding-top: 1rem;
+
 }
 li{
     list-style: none;
     padding-top: 1.5rem;
 }
-.nav__items {
+.nav__items, .lo_goIcon {
     text-decoration: none;
+}
+.nav__items{
     letter-spacing: 1px;
     font-weight: 600;
     color: black;
     font-size: 1.1rem;
 }
+.items_nav{
+    display: none;
+}
 .nav__item{
     font-size: 1.4rem;
+} 
+
+
+.menu_btn_toggle{
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+}
+.drawer{
+    position: relative;
+    max-height: fit-content;
+}
+.button_close{
+    position: absolute;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    top: 0.2rem;
+    right: 1.5rem;
+    cursor: pointer;
+}
+
+@media(width<=840px){
+    .menu_btn_toggle{
+        display: block;
+    }
+    header{
+        padding: 0;
+        height: 4rem;
+
+    }
+    .logo{
+        padding-top: 1rem;
+    }
 }
